@@ -15,13 +15,16 @@
         <a href="" >退出登录</a>
     </div>
     
+    
+    
+    
     <div id="userinfo">
     	<div id="photo"></div>
     	
     	个人信息
     	
     	
-    	
+    	账户余额
     	
     	<input type="button" name="myBlog" value="进入我的博客">
     </div>
