@@ -20,7 +20,7 @@
 
 	<!-- xml与注解混合配置 -->
 	<!-- 加入包的扫描，以实例化bean -->
-	<context:component-scan base-package="com.yc.dao.impl,com.yc.biz.impl,com.yc.aspect,com.yc.web.controller" />
+	<context:component-scan base-package="com.dr.dao.impl,com.dr.biz.impl,com.dr.aspect,com.dr.web.controller" />
 
 	<aop:aspectj-autoproxy />
 
@@ -50,10 +50,10 @@
 		</property>
 		
 		<!-- 别名包的配置 -->
-		<property name="typeAliasesPackage" value="com.yc.bean" />
+		<property name="typeAliasesPackage" value="com.dr.bean" />
 		
 		<!-- mybatis映射文件 -->
-		<property name="mapperLocations" value="classpath*:com/yc/mapper/*.xml"></property>
+		<property name="mapperLocations" value="classpath*:com/dr/mapper/*.xml"></property>
 		
 	</bean>
 	
