@@ -64,10 +64,13 @@ public class BookController {
 	}
 	
 	
-	@RequestMapping(value="user/toeditblog")
-	public String toeditblog(){
-		return "editblog";
+
+	@RequestMapping(value="user/toEditBlog")
+	public String toEditBlog(){
+		return "editBlog";
 	}
+	
+	
 	
 	
 

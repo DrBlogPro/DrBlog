@@ -27,7 +27,8 @@
 <input type="button" value="按收藏夹" name="folder" /> 
 
 
-<a href="user/toeditblog"><input type="button" value="写博客" name="write" /></a>
+<a href="user/toEditBlog"><input type="button"  value="写博客" name="write" /></a>
+<input type="button" src="user/toEditBlog" value="test" />
 <div name="myblog" >
 我的blog列表
 ajax
