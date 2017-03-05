@@ -1,8 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false" %>
+<%
+	String path=request.getContextPath();
+	String basePath=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<base href="<%=basePath %>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>我的博客</title>
 </head>
@@ -20,7 +27,7 @@
 <input type="button" value="按收藏夹" name="folder" /> 
 
 
-<a href="user/editblog"><input type="button" value="写博客" name="write" /></a>
+<a href="user/toeditblog"><input type="button" value="写博客" name="write" /></a>
 <div name="myblog" >
 我的blog列表
 ajax

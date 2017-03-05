@@ -39,6 +39,37 @@ public class BookController {
 	public void setBlogsBiz(BlogsBiz blogsBiz) {
 		this.blogsBiz = blogsBiz;
 	}
+	
+	
+	@RequestMapping(value="login")
+	public String login(){
+		return "login";
+	}
+	
+	@RequestMapping(value="person")
+	public String person(){
+		return "person";
+	}
+	
+	
+	
+	
+	
+	//测试。直接进入页面
+	
+	
+	@RequestMapping(value="user/toMyBlog")
+	public String toMyblog(){
+		return "myBlog";
+	}
+	
+	
+	@RequestMapping(value="user/toeditblog")
+	public String toeditblog(){
+		return "editblog";
+	}
+	
+	
 
 //	//http://localhost:8080/springMVC_douban1/listBook
 //	@RequestMapping(value="/admin/listBook")
