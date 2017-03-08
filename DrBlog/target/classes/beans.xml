@@ -66,7 +66,20 @@
 	
 	<!-- 静态资源 -->
 	<mvc:annotation-driven/>
-	<mvc:default-servlet-handler/>
+	 <mvc:default-servlet-handler/>
+	
+	<!-- 
+	 <mvc:resources location="/css/" mapping="/css/**"  ></mvc:resources>
+	 <mvc:resources location="/js/" mapping="/js/**"  ></mvc:resources>
+	 <mvc:resources location="/" mapping="/*.html"  ></mvc:resources>
+	 -->
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	<!-- 上传配置 -->

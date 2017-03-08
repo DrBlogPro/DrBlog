@@ -1,0 +1,24 @@
+index		首页
+person		个人中心
+
+edit
+editBlog	blog编辑页
+
+hot			热门blog&tag热门页
+
+login_
+login		登录
+
+myBlog		我的blog(总)页面
+
+admin		后台
+
+
+main.css:		全部页面body里要嵌套一个 <div id="htmlbody"></div>
+
+
+
+<%String basepath = request.getContextPath(); %>
+/DrBlog		即->webapp(webroot根目录)
+<%String path = request.getContextPath()+"/editormd"; %>
+/DrBlog/editormd	即->webapp/editormd
