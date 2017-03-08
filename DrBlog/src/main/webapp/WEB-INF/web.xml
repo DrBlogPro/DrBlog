@@ -12,14 +12,16 @@
   
   
   
-  <!-- 
+  <!-- session过滤
   <filter>
   	<filter-name>RightFilter</filter-name>
   	<filter-class>com.dr.web.filters.RightFilter</filter-class>
   </filter>
    -->
   
-  <filter>
+  
+  
+	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
@@ -28,34 +30,43 @@
 		</init-param>
 	</filter>
 	
-	<!-- 
+	<!-- session过滤
 	<filter-mapping>
 		<filter-name>RightFilter</filter-name>
 		<url-pattern>/admin/*</url-pattern>
 	</filter-mapping>
 	 -->
 	
+	
+	
 	<filter-mapping>
 		<filter-name>characterEncodingFilter</filter-name>
-		<url-pattern>*</url-pattern>
+		<url-pattern>*</url-pattern><!-- 拦截  * -->
 	</filter-mapping>
 	
 	
+	 <!-- 分发器过滤 -->
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<!-- 这个可以读取别的xml文件（别的xml 里有 import beans.xml） -->
+			<!--   这个可以读取别的xml文件（别的xml 里有 import beans.xml） -->
 			<param-value>classpath:beans.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	
+	
+	
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
+	 
+	
 	
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>

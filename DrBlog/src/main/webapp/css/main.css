@@ -1,0 +1,17 @@
+html{
+	margin: auto;
+}
+/*body{
+	background:gray;
+}*/
+
+
+h2{
+	color: red;
+}
+
+#htmlbody{
+	width:85%;
+	color:#ff8080;
+	margin: auto;
+}
