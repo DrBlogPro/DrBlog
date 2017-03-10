@@ -4,6 +4,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.dr.bean.Blog;
+import com.dr.bean.Tags;
 import com.dr.biz.BlogsBiz;
 import com.dr.dao.BaseDao;
 
@@ -16,10 +17,137 @@ public class BlogsBizImpl implements BlogsBiz {
 		this.basedao = basedao;
 	}
 
+
 	@Override
-	public List<Blog> getBlogs() {
+	public List<Blog> getAttentionBlog() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public List<Blog> getMyBlogs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> getBlogsBySearchUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> getBlogsByWord() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> getCollectBlogs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> getBlogsByFolder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void classBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void goodBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void badBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void moneyBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reportBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Blog> getHotBlogs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Tags> getRandomTags() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Tags> getAllTags() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> getHotBlogsByTags() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> getMyForward() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void hotBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void browseBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void collectBlog() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void forwardBlog() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

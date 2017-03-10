@@ -85,8 +85,12 @@
 	<!-- 上传配置 -->
 	<bean id="multipartResolve"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="2000000" />
+		<property name="maxUploadSize" value="8000000" />
 	</bean>
+	
+
+	
+
 	
 	<!-- 事务管理 -->
 	<!-- 
