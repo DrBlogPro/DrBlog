@@ -26,7 +26,10 @@
     
     
     <div id="userinfo">
-    	<div id="photo"></div>
+    	<div id="photo">
+    	
+    	
+    	</div>
     	
     	个人信息
     	

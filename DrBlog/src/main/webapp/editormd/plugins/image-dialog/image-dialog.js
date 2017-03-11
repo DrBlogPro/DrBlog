@@ -103,7 +103,7 @@
                             }
 
                             if (alt === "") {
-                                cm.setCursor(cursor.line, cursor.ch + 2);
+                                //cm.setCursor(cursor.line, cursor.ch + 2);//插入图片后不设置alt自动跳转第二行
                             }
 
                             this.hide().lockScreen(false).hideMask();

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dr.mapper.BlogMapper">
+	<cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true"></cache>
+	
+	<!-- 按热度获取blog列表，先不写 -->
+	<select id="getBlogsByHot"  resultType="Blog">
+		select 
+		
+		
+		
+		from blog
+		inner join bloginfo
+		on blog.bid=bloginfo.bid
+		
+		
+		
+	</select>
+	
+	<!--//按标签获取最热blog，先不写-->
+	
+	<!--//获取关注人最新发表blog   时间-->
+	
+	<!--//获取我写的博客		时间-->
+	
+	<!--//按用户搜索blog-->
+	
+	<!--//按关键字（标题）搜索，正则-->
+	
+	<!--//收藏列表-->
+	
+	<!--//文件夹分类blog-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--void classBlog();//分类blog-->
+	
+	<!--void goodBlog();//点赞-->
+	
+	<!--void badBlog();//踩-->
+	
+	<!--void moneyBlog();//打赏-->
+	
+	<!--void editBlog();//写blog，先不写-->
+	
+	<!--void reportBlog();//举报blog-->
+	
+	
+	
+	
+</mapper>

@@ -35,7 +35,6 @@
 		<p>验证码：<input type="text" name="validateCode" /></p>
 		<img id="randImg" border=0 src="imageCode.jsp">
 		<a href="javascript:loadImage();">换一张</a>
-		
 		<p><input type="submit" value="登录" /></p>
 	</fieldset>
 </form>
